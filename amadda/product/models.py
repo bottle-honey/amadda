@@ -11,7 +11,7 @@ class Product(models.Model):
     product_inf = models.TextField(null=False, verbose_name='상품 설명')
     product_stock = models.IntegerField(default=0,null=False, verbose_name='상품 재고')
     product_sold = models.IntegerField(default=0,null=False,verbose_name='상품 판매량')
-    # product_enroll = models.DateTimeField(auto_now_add=True,default=timezone.now(),verbose_name='상품 등록일')
+    product_enroll = models.DateTimeField(auto_now_add=True,null=True,verbose_name='상품 등록일')
     product_site = models.CharField(max_length=300,null=True,verbose_name='상품 판매 사이트')
     product_sale = models.IntegerField(default=0,null=False,verbose_name='상품 할인 퍼센트')
     class Meta:
