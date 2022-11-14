@@ -1,0 +1,22 @@
+<table>
+    <tr>
+        <th>상품 이름</th>
+        <th>상품 가격</th>
+        <th>상품 설명</th>
+        <th>상품 주소</th>
+        <th>상품 이미지</th>
+    </tr>
+    {% if products %}
+        <div>hello</div>
+    {% endif %}
+    {% for product in products %}
+        <tr>
+            <td>{{ product.product_id }}</td>
+            <td>{{ product.product_price }}</td>
+            <td>{{ product.product_inf }}</td>
+            <td>{{ product.product_site }}</td>
+            <td>{{ product.product_site }}</td>
+            <td>{{ product.product_imgloc }}</td>
+        </tr>
+    {% endfor %}
+</table>

@@ -1,0 +1,13 @@
+<div>
+    상품 업로드
+    <form action="{% url 'create_postform' %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="text" name="product_name" value="상품 이름">
+        <input type="number" name="product_price" value="상품 가격">
+        <input type="number" name="product_stock" value="상품 재고">
+        <input type="text" name="product_inf" value="상품 설명">
+        <input type="url" name="product_site" value="상품 주소">
+        <input type="file" name="product_imgloc">
+        <input type="submit" value="등록하기">
+    </form>
+</div>
