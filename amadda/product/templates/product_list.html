@@ -15,8 +15,9 @@
             <td>{{ product.product_price }}</td>
             <td>{{ product.product_inf }}</td>
             <td>{{ product.product_site }}</td>
-            <td>{{ product.product_site }}</td>
-            <td>{{ product.product_imgloc }}</td>
+            <td><img src="{{ product.product_imgloc }}" ></td>
+            
         </tr>
     {% endfor %}
+    
 </table>
